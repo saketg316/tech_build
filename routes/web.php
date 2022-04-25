@@ -29,6 +29,6 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('dashboard/cart', [ \App\Http\Controllers\DashboardController::class, 'cart'])->name('cart');
 Route::post('dashboard/checkout', [ \App\Http\Controllers\DashboardController::class, 'checkout'])->name('checkout');
 Route::get('orders', [ \App\Http\Controllers\DashboardController::class, 'orders'])->name('orders');
-Route::resource('dashboard', \App\Http\Controllers\DashboardController::class)->only('index'); 
+Route::resource('dashboard', \App\Http\Controllers\DashboardController::class)->only('index');////
 
 
