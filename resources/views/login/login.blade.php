@@ -19,6 +19,10 @@
                             {{ session('success') }}
                         </div>
                     @endif
+                    @foreach ($errors->all() as $error)
+                        {!! $errors->first() !!}
+                    @endforeach
+                    
                       <form action="{{ route('login.post') }}" method="POST">
                           @csrf
                           <div class="form-group row">
